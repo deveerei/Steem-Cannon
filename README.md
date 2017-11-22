@@ -25,7 +25,7 @@ Fork this repository and submit a Pull Request.
 
 ## Authors
 
-[Deveerei](https://utopian.io/@deveerei
+[Deveerei](https://utopian.io/@deveerei)
 
 See also the list of contributors:
 
