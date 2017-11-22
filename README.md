@@ -12,7 +12,7 @@ https://deveerei.github.io/Steem-Cannon/
 
 ## Proposed Domain
 
-https://steemplay.i/steem-cannon 
+https://steemplay.io/steem-cannon 
 (This isn't an active link)
 
 ## Built With
