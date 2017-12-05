@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
+    <custom-block blocktag="custom-39" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_1&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="39" message="" name="" oid="-1" return="void" shared="false" snippetID="16"/>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -27,7 +28,29 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="17" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="1.2"/>
+                <prop id="3" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="6"/>
+                <prop id="2" list="0" val="4"/>
+                <prop id="3" list="0" val="11"/>
+                <prop id="5" list="0" val="3"/>
+                <prop id="6" list="0" val="13"/>
+                <prop id="7" list="0" val="3"/>
+                <prop id="8" list="0" val="15"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="4" id="37" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber Copy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -82,6 +105,11 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="38" name="Alien Triangle" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <tileset across="1" atlasID="0" desc="" down="2" id="17" name="Desert Ground" oid="-1" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -89,6 +117,16 @@
     </tileset>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <custom-block blocktag="custom-40" blocktype="NORMAL" code="cast(sayToScene(&quot;Items Remaining&quot;, &quot;_customBlock_GetItemsRemaining&quot;), Float)" desc="" global="false" gui="Number Of Items Remaining" id="40" message="GetItemsRemaining" name="GetItemsRemaining" oid="-1" return="number" shared="false" snippetID="21"/>
+    <custom-block blocktag="custom-27" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_HideLabel&quot;);" desc="" global="false" gui="hide label for %0" id="27" message="HideLabel" name="HideLabel" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-34" blocktype="NORMAL" code="cast(.say(&quot;Label&quot;, &quot;_customBlock_MouseOverLabel&quot;), Bool)" desc="" global="false" gui="is mouse over label for %0" id="34" message="MouseOverLabel" name="MouseOverLabel" oid="-1" return="boolean" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-33" blocktype="NORMAL" code="cast(.say(&quot;Label&quot;, &quot;_customBlock_MouseOverText&quot;), Bool)" desc="" global="false" gui="is mouse over text for %0" id="33" message="MouseOverText" name="MouseOverText" oid="-1" return="boolean" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
         <snippets>
             <s enabled="true" id="8">
@@ -116,12 +154,12 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="23" id="10" name="Player Projectile" shared="false" width="17">
-        <anim across="2" down="1" durations="70,70" height="23" id="0" loop="true" name="Animation 0" numframes="2" originx="8" originy="11" sync="false" version="1" width="34">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="10" name="Player Projectile" shared="false" width="16">
+        <anim across="1" down="1" durations="100" height="16" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="8" sync="false" version="2" width="16">
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="15" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="5">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -159,8 +197,46 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="2" name="Player Tank" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
+        <anim across="2" down="2" durations="200,300,150" height="128" id="0" loop="true" name="Animation 0" numframes="3" originx="32" originy="32" sync="false" version="2" width="128">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-21" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentBottom&quot;);" desc="" global="false" gui="bottom-align label for %0" id="21" message="SetLabelAlignmentBottom" name="SetLabelAlignmentBottom" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-26" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentCenter&quot;);" desc="" global="false" gui="center label for %0" id="26" message="SetLabelAlignmentCenter" name="SetLabelAlignmentCenter" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-32" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentLeft&quot;);" desc="" global="false" gui="left-align label for %0" id="32" message="SetLabelAlignmentLeft" name="SetLabelAlignmentLeft" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-24" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentMiddle&quot;);" desc="" global="false" gui="center label vertically for %0" id="24" message="SetLabelAlignmentMiddle" name="SetLabelAlignmentMiddle" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-28" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentRight&quot;);" desc="" global="false" gui="right-align label for %0" id="28" message="SetLabelAlignmentRight" name="SetLabelAlignmentRight" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-23" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentTop&quot;);" desc="" global="false" gui="top-align label for %0" id="23" message="SetLabelAlignmentTop" name="SetLabelAlignmentTop" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-31" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelFont&quot;, []);" desc="" global="false" gui="set label font to %1 for %0" id="31" message="SetLabelFont" name="SetLabelFont" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="font" order="1" type="font"/>
+    </custom-block>
+    <custom-block blocktag="custom-22" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelHeight&quot;, []);" desc="" global="false" gui="set label height to %1 for %0" id="22" message="SetLabelHeight" name="SetLabelHeight" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="height" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-30" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelText&quot;, []);" desc="" global="false" gui="set label text to %1 for %0" id="30" message="SetLabelText" name="SetLabelText" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="text" order="1" type="text"/>
+    </custom-block>
+    <custom-block blocktag="custom-29" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelWidth&quot;, []);" desc="" global="false" gui="set label width to %1 for %0" id="29" message="SetLabelWidth" name="SetLabelWidth" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="width" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-25" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_ShowLabel&quot;);" desc="" global="false" gui="show label for %0" id="25" message="ShowLabel" name="ShowLabel" oid="-1" return="void" shared="false" snippetID="14">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="150" id="41" name="Win" offsets="0|0|0|,13|0|13,31|0|31,51|0|51,86|0|86,120|0|120,160|0|160,195|0|195,206|0|206,229|0|229,252|0|252,275|0|275,298|0|298,315|0|315,334|0|334,347|0|347,386|0|386,419|0|419,445|0|445,479|0|479,512|0|512,545|0|545,577|0|577,610|0|610,641|0|641,674|0|674,708|0|708,724|0|724,744|0|744,767|0|767,792|0|792,815|0|815,845|0|845,896|0|896,928|0|928,962|0|962,995|0|995,1030|0|1030,1064|0|1064,1098|0|1098,1131|0|1131,1168|0|1168,1186|0|1186,1221|0|1221,1259|0|1259,1286|0|1286,1331|0|1331,1368|0|1368,1401|0|1401,1435|0|1435,1468|0|1468,1502|0|1502,1536|0|1536,1574|0|1574,1609|0|1609,1642|0|1642,1693|0|1693,1737|0|1737,1772|0|1772,1807|0|1807,1836|0|1836,1856|0|1856,1884|0|1884,1909|0|1909,1938|0|1938,1955|0|1955,1985|0|1985,2014|0|2014,2042|0|2042,2074|0|2074,2102|0|2102,2132|0|2132,2163|0|2163,2195|0|2195,2212|0|2212,2236|0|2236,2266|0|2266,2283|0|2283,2331|0|2331,2362|0|2362,2390|0|2390,2422|0|2422,2451|0|2451,2479|0|2479,2508|0|2508,2536|0|2536,2567|0|2567,2595|0|2595,2639|0|2639,2675|0|2675,2706|0|2706,2735|0|2735,2760|0|2760,2780|0|2780,2805|0|2805,2831|0|2831,2832|0|2832,2833|0|2833,2834|0|2834,2835|0|2835,2836|0|2836,2837|0|2837,2838|0|2838,2839|0|2839,2840|0|2840,2841|0|2841,2842|0|2842,2843|0|2843,2844|0|2844,2845|0|2845,2846|0|2846,2847|0|2847,2848|0|2848,2849|0|2849,2850|0|2850,2851|0|2851,2852|0|2852,2853|0|2853,2854|0|2854,2855|0|2855,2856|0|2856,2857|0|2857,2858|0|2858,2859|0|2859,2860|0|2860,2861|0|2861,2862|0|2862,2863|0|2863,2864|0|2864,2865|0|2865,2883|0|2883,2911|0|2911,2944|0|2944,2973|0|2973,0|75|3009,20|75|3029,56|75|3065,81|75|3090,117|75|3126,134|75|3143,160|75|3169,188|75|3197,189|75|3198,225|75|3234,226|75|3235,243|75|3252,268|75|3277,287|75|3296,305|75|3314,326|75|3335,359|75|3368,397|75|3406,409|75|3418,423|75|3432,438|75|3447,454|75|3463,480|75|3489,516|75|3525,554|75|3563,591|75|3600,621|75|3630,653|75|3662,691|75|3700,726|75|3735,763|75|3772,799|75|3808,831|75|3840,882|75|3891,915|75|3924,949|75|3958,985|75|3994,1020|75|4029,1057|75|4066,1075|75|4084,1103|75|4112,1129|75|4138,1155|75|4164,1190|75|4199,1227|75|4236,1260|75|4269,1295|75|4304,1328|75|4337,1362|75|4371,1396|75|4405,1418|75|4427,1451|75|4460,1486|75|4495,1521|75|4530,1556|75|4565,1591|75|4600,1626|75|4635,1659|75|4668,1693|75|4702,1723|75|4732,1756|75|4765,1787|75|4796,1819|75|4828,1851|75|4860,1881|75|4890,1924|75|4933,1952|75|4961,1980|75|4989,2012|75|5021,2042|75|5051,2072|75|5081,2089|75|5098,2114|75|5123,2138|75|5147,2163|75|5172,2198|75|5207,2229|75|5238,2257|75|5266,2289|75|5298,2318|75|5327,2348|75|5357,2378|75|5387,2401|75|5410,2429|75|5438,2460|75|5469,2492|75|5501,2523|75|5532,2554|75|5563,2587|75|5596,2619|75|5628,2651|75|5660,2652|75|5661,2653|75|5662,2654|75|5663,2655|75|5664,2656|75|5665,2657|75|5666,2658|75|5667,2659|75|5668,2660|75|5669,2661|75|5670,2662|75|5671,2663|75|5672,2664|75|5673,2665|75|5674,2666|75|5675,2667|75|5676,2668|75|5677,2669|75|5678,2670|75|5679,2671|75|5680,2672|75|5681,2673|75|5682,2674|75|5683,2675|75|5684,2676|75|5685,2677|75|5686,2678|75|5687,2679|75|5688,2680|75|5689,2681|75|5690,2682|75|5691,2683|75|5692,2684|75|5693,2685|75|5694,2686|75|5695,2687|75|5696,2688|75|5697,2689|75|5698,2690|75|5699,2691|75|5700,2692|75|5701,2693|75|5702,2694|75|5703,2695|75|5704,2696|75|5705,2697|75|5706,2698|75|5707,2699|75|5708,2700|75|5709,2701|75|5710,2702|75|5711,2703|75|5712,2704|75|5713,2705|75|5714,2706|75|5715,2707|75|5716,2708|75|5717,2709|75|5718,2710|75|5719,2711|75|5720,2712|75|5721,2713|75|5722,2714|75|5723,2715|75|5724,2716|75|5725,2747|75|5756,2771|75|5780,2772|75|5781,2773|75|5782,2774|75|5783,2775|75|5784,2776|75|5785,2777|75|5786,2778|75|5787,2779|75|5788,2780|75|5789,2781|75|5790,2782|75|5791,2783|75|5792,2784|75|5793,2785|75|5794,2786|75|5795,2838|75|5847,2882|75|5891,2883|75|5892,2884|75|5893,2885|75|5894,2886|75|5895,2887|75|5896,2888|75|5897,2889|75|5898,2890|75|5899,2891|75|5900,2892|75|5901,2893|75|5902,2894|75|5903,2930|75|5939,2963|75|5972,2964|75|5973,2965|75|5974,2966|75|5975,2967|75|5976,2968|75|5977,2969|75|5978,2970|75|5979,2971|75|5980,2972|75|5981,2973|75|5982,2974|75|5983,2975|75|5984,2976|75|5985,2977|75|5986,2978|75|5987,2979|75|5988,2980|75|5989,2981|75|5990,2982|75|5991,2983|75|5992,2984|75|5993,2985|75|5994,3020|75|6029,3021|75|6030,3022|75|6031,3023|75|6032,3024|75|6033,3059|75|6068" oid="-1" prerendered="false" rowHeight="75" shared="false"/>
 </pack>

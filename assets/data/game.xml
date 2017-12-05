@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<game accelFramerate="0" adsPosition="0" aheight="480" androidMinVersion="0" androidTargetVersion="7" antialias="false" appName="My Game" appType="0" atlasBindingDefault="false" author="" authorURL="" autoRotate="false" awidth="640" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" bindAllAtlasesDefault="false" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" defaultSceneID="1" desc="Example game that is similar to Space Invaders." desktopScale="1x" desktopScaleMode="1" disableBackButton="false" enableGPG="false" enablePurchases="false" format="3.4.0" gameid="-1" googleAppID="" haxeExtras="" height="480" internalVersion="1" internalVersionIOS="1" kit="false" lockURL="" macBundleID="com.yourcompany.gamename" maxScaleAndroid="4x" maxScaleDesktop="4x" maxScaleIOS="4x" maxScaleWeb="4x" metroColor="-12566464" multitouch="true" name="AlienApproach" openflExtras="" openflLegacy="true" orientation="0" physicsMode="0" pixelsnap="false" preloaderstyle="0" products="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="0.0" simulatorTargetOS="0.0" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" telemetry="false" testAds="false" useGlossyIcon="false" webScale="1x" width="640" windowsAppName="" windowsAuthor="" windowsBundleID="com.yourcompany.gamename">
+<game accelFramerate="0" adsPosition="0" aheight="480" androidMinVersion="0" androidTargetVersion="7" antialias="false" appName="My Game" appType="0" atlasBindingDefault="false" author="" authorURL="" autoRotate="false" awidth="640" backgroundColor="-15592942" barBackgroundColor="-12303292" barColor="-7829368" barHeight="8" barLocation="0" barOffsetX="0" barOffsetXPhone="0" barOffsetXTablet="0" barOffsetY="0" barOffsetYPhone="0" barOffsetYTablet="0" barScalePhone="1.0" barScaleTablet="2.0" barWidth="120" bindAllAtlasesDefault="false" borderColor="-12303292" borderThickness="2" bundleID="com.company.gamename" bundleVersion="1.0" checksum="none" cws-desc="" cws-icon128="" cws-icon16="" cws-name="" cws-version="" default="1" defaultFramerate="30" defaultSceneID="1" desc="Example game that is similar to Space Invaders." desktopScale="1x" desktopScaleMode="1" disableBackButton="false" enableGPG="false" enablePurchases="false" format="3.4.0" gameid="-1" googleAppID="" haxeExtras="" height="480" internalVersion="1" internalVersionIOS="1" kit="false" lockURL="" macBundleID="com.yourcompany.gamename" maxScaleAndroid="4x" maxScaleDesktop="4x" maxScaleIOS="4x" maxScaleWeb="4x" metroColor="-12566464" multitouch="true" name="Steem Cannon" openflExtras="" openflLegacy="true" orientation="0" physicsMode="0" pixelsnap="false" preloaderstyle="0" products="" scale="1" scaleModeAndroid="0" scaleModeDesktop="0" scaleModeIOS="0" scaleModeWeb="0" showAds="false" simulatorOS="0.0" simulatorTargetOS="0.0" splashStyle="0" startInFullScreenDesktop="false" startInFullScreenWeb="false" swfHeight="0" swfWidth="0" swfX="0" swfY="0" swfloc="" telemetry="false" testAds="false" useGlossyIcon="false" webScale="1x" width="640" windowsAppName="" windowsAuthor="" windowsBundleID="com.yourcompany.gamename">
     <exts>
         <e enabled="false" id="test"/>
         <e enabled="false" id="test-native"/>
@@ -50,7 +50,13 @@
         <scale enabled="false" name="3x"/>
         <scale enabled="true" name="4x"/>
     </androidScales>
-    <folders/>
+    <folders>
+        <group desc="" id="0" name="Enemies" type="actortype">
+            <r id="3"/>
+            <r id="5"/>
+            <r id="7"/>
+        </group>
+    </folders>
     <packs/>
     <groups>
         <group desc="" id="4" name="Alien"/>
@@ -104,7 +110,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,17,18," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="1,3,5,7,9,11,13,15,16,17,18,37,41," name="Main Atlas (Default)" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

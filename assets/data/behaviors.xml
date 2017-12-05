@@ -74,4 +74,138 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet actorid="7" attachedevent="true" class="scripts.ActorEvents_7" classname="scripts.ActorEvents_7" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="12" name="ActorEvents_7" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_14_14_Label" classname="scripts.Design_14_14_Label" desc="Attach this to an actor to show text on the screen." description="Attach this to an actor to show text on the screen." design="true" drawOrder="0" id="14" name="Label" oid="-1" package="scripts" shared="false" type="actor">
+        <boolean default="true" defaultValue="true" desc="If selected, the sprite of the actor will be hidden." dropdown="" fullname="Hide Sprite" hidden="false" id="32" name="_HideSprite" order="18"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <font default="" defaultValue="" desc="The font used to display the text." dropdown="" fullname="Font" hidden="false" id="1" name="_Font" order="13"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Line Width" hidden="true" id="33" name="_LineWidth" order="5"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Line Height" hidden="true" id="34" name="_LineHeight" order="6"/>
+        <text default="Replace Me" defaultValue="Replace Me" desc="The text to display. &lt;br/&gt;&#10;You can use the custom blocks that come with this behavior to change the text at runtime." dropdown="" fullname="Text" hidden="false" id="4" name="_Text" order="12"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Wrapped Lines" hidden="true" id="37" name="_WrappedLines" order="10"/>
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="Wrap Long Lines" hidden="false" id="39" name="_WrapLongLines" order="21"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Current Line" hidden="true" id="41" name="_CurrentLine" order="11"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Update" hidden="true" id="42" name="_Update" order="22"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Mouse Over" hidden="true" id="43" name="_MouseOver" order="23"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="X" hidden="true" id="11" name="_X" order="1"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the actor will be anchored to the screen." dropdown="" fullname="Anchor to Screen" hidden="false" id="14" name="_AnchortoScreen" order="19"/>
+        <text default="" defaultValue="" desc="The horizontal alignment of the text." dropdown="Left=Left&#10;Center=Center&#10;Right=Right" fullname="Horizontal Alignment" hidden="false" id="17" name="_HorizontalAlignment" order="14"/>
+        <number default="128.0" defaultValue="128.0" desc="The width of the label. The text will be aligned accordingly based on the &lt;var&gt;Label Width&lt;/var&gt; and the &lt;var&gt;Alighnment&lt;/var&gt; attribute." dropdown="" fullname="Label Width" hidden="false" id="18" name="_LabelWidth" order="16"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Text Width" hidden="true" id="21" name="_TextWidth" order="7"/>
+        <text default="" defaultValue="" desc="The vertical alignment of the text.&#10;" dropdown="Top=Top&#10;Middle=Middle&#10;Bottom=Bottom" fullname="Vertical Alignment" hidden="false" id="24" name="_VerticalAlignment" order="15"/>
+        <number default="32.0" defaultValue="32.0" desc="The height of the label." dropdown="" fullname="Label Height" hidden="false" id="25" name="_LabelHeight" order="17"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Y" hidden="true" id="26" name="_Y" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Text Height" hidden="true" id="27" name="_TextHeight" order="8"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="Lines" hidden="true" id="28" name="_Lines" order="3"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Line" hidden="true" id="29" name="_Line" order="4"/>
+        <boolean default="true" defaultValue="true" desc="If selected, the behavior will treat \n as a newline character." dropdown="" fullname="Use Newline Characters" hidden="false" id="30" name="_UseNewlineCharacters" order="20"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Visible" hidden="true" id="31" name="_Visible" order="9"/>
+        <blocks>
+            <receiver blockID="30" id="1"/>
+            <receiver blockID="31" id="2"/>
+            <receiver blockID="32" id="3"/>
+            <receiver blockID="26" id="4"/>
+            <receiver blockID="28" id="5"/>
+            <receiver blockID="29" id="6"/>
+            <receiver blockID="23" id="7"/>
+            <receiver blockID="24" id="8"/>
+            <receiver blockID="21" id="9"/>
+            <receiver blockID="22" id="10"/>
+            <receiver blockID="127" id="11"/>
+            <receiver blockID="27" id="12"/>
+            <receiver blockID="25" id="13"/>
+            <receiver blockID="175" id="14"/>
+            <receiver blockID="33" id="15"/>
+            <receiver blockID="34" id="16"/>
+        </blocks>
+        <events>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="6" repeats="true"/>
+            <event displayName="Created" enabled="true" id="5" name="init" order="4" repeats="true"/>
+            <event displayName="SetLabelText" enabled="true" id="6" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="SetLabelFont" enabled="true" id="7" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="SetLabelAlignmentLeft" enabled="true" id="8" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="SetLabelAlignmentCenter" enabled="true" id="9" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="SetLabelAlignmentRight" enabled="true" id="10" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="SetLabelWidth" enabled="true" id="11" name="event-custom-block" order="15" repeats="true"/>
+            <event displayName="SetLabelAlignmentTop" enabled="true" id="13" name="event-custom-block" order="12" repeats="true"/>
+            <event displayName="SetLabelAlignmentMiddle" enabled="true" id="14" name="event-custom-block" order="13" repeats="true"/>
+            <event displayName="SetLabelAlignmentBottom" enabled="true" id="15" name="event-custom-block" order="14" repeats="true"/>
+            <event displayName="SetLabelHeight" enabled="true" id="16" name="event-custom-block" order="16" repeats="true"/>
+            <event displayName="HideLabel" enabled="true" id="17" name="event-custom-block" order="17" repeats="true"/>
+            <event displayName="ShowLabel" enabled="true" id="18" name="event-custom-block" order="18" repeats="true"/>
+            <event displayName="MouseOverText" enabled="true" id="19" name="event-custom-block" order="19" repeats="true"/>
+            <event displayName="MouseOverLabel" enabled="true" id="20" name="event-custom-block" order="20" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="16" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <actorgroup default="" defaultValue="" desc="" dropdown="" fullname="All" hidden="false" id="1" name="_All" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Victory Counter" hidden="false" id="2" name="_VictoryCounter" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Win?" hidden="false" id="3" name="_Win" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor Created" enabled="true" id="1" name="event-group-create-kill" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" name="ActorEvents_5" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="37" attachedevent="true" class="scripts.ActorEvents_37" classname="scripts.ActorEvents_37" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_37" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_21_21_ItemsRemaining" classname="scripts.Design_21_21_ItemsRemaining" desc="Keeps track of the number of items remaining in the specified actor group. Provides the option to switch scenes when the number of items reaches zero." description="Keeps track of the number of items remaining in the specified actor group. Provides the option to switch scenes when the number of items reaches zero." design="true" drawOrder="0" id="21" name="Items Remaining" oid="-1" package="scripts" shared="false" type="scene">
+        <actorgroup default="" defaultValue="" desc="Specify the Actor Group that will be monitored" dropdown="" fullname="Monitor Actor Group" hidden="false" id="1" name="_MonitorActorGroup" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Count" hidden="true" id="2" name="_Count" order="0"/>
+        <text default="" defaultValue="" desc="This is the message to send when there are no Actors left in the specified group.  Leave blank to send no message." dropdown="" fullname="Message When None Left" hidden="false" id="3" name="_MessageWhenNoneLeft" order="8"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Done" hidden="true" id="4" name="_Done" order="2"/>
+        <boolean default="false" defaultValue="false" desc="Check this box to display a numerical counter of the number of items left.&lt;br&gt;&#10;" dropdown="" fullname="Display Counter?" hidden="false" id="5" name="_DisplayCounter" order="4"/>
+        <number default="0" defaultValue="0" desc="Horizontal offset to display the number of items left" dropdown="" fullname="Display X Offset" hidden="false" id="6" name="_DisplayXOffset" order="6"/>
+        <number default="0" defaultValue="0" desc="Vertical offset to display the number of items left" dropdown="" fullname="Display Y Offset" hidden="false" id="7" name="_DisplayYOffset" order="7"/>
+        <font default="" defaultValue="" desc="Font used to display the number of items left." dropdown="" fullname="Display Font" hidden="false" id="10" name="_DisplayFont" order="5"/>
+        <boolean default="false" defaultValue="false" desc="Check this box to switch the scene when no items are left." dropdown="" fullname="Switch Scene When None Left?" hidden="false" id="11" name="_SwitchSceneWhenNoneLeft" order="9"/>
+        <scene default="" defaultValue="" desc="Select the Scene to switch to when there are no items left." dropdown="" fullname="Scene To Switch To" hidden="false" id="12" name="_SceneToSwitchTo" order="10"/>
+        <number default="0.5" defaultValue="0.5" desc="Enter the time to fade out." dropdown="" fullname="Scene Fade Out Time" hidden="false" id="13" name="_SceneFadeOutTime" order="11"/>
+        <number default="0.5" defaultValue="0.5" desc="Enter the time to fade in." dropdown="" fullname="Scene Fade In Time" hidden="false" id="14" name="_SceneFadeInTime" order="12"/>
+        <blocks>
+            <ureceiver blockID="0" id="1"/>
+            <receiver blockID="40" id="2"/>
+        </blocks>
+        <events>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="GetItemsRemaining" enabled="true" id="5" name="receiver-2-10" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="22" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
+        <actorgroup default="" defaultValue="" desc="" dropdown="" fullname="All" hidden="false" id="1" name="_All" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Victory Counter" hidden="false" id="2" name="_VictoryCounter" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Win?" hidden="false" id="3" name="_Win" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor Created" enabled="true" id="1" name="event-group-create-kill" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="23" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
+        <actorgroup default="" defaultValue="" desc="" dropdown="" fullname="All" hidden="false" id="1" name="_All" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Victory Counter" hidden="false" id="2" name="_VictoryCounter" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="Win?" hidden="false" id="3" name="_Win" order="2"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor Created" enabled="true" id="1" name="event-group-create-kill" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
 </pack>
