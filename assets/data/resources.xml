@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <custom-block blocktag="custom-39" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_1&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="39" message="" name="" oid="-1" return="void" shared="false" snippetID="16"/>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="4" id="37" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="1UP" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="false">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="1.2"/>
+                <prop id="3" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="1">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="2">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="6"/>
+                <prop id="2" list="0" val="4"/>
+                <prop id="3" list="0" val="11"/>
+                <prop id="5" list="0" val="3"/>
+                <prop id="6" list="0" val="13"/>
+                <prop id="7" list="0" val="3"/>
+                <prop id="8" list="0" val="15"/>
+            </s>
+        </snippets>
+    </actor>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
         <snippets>
             <s enabled="true" id="0">
@@ -23,9 +45,9 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="8" name="Alien Cruiser" shared="false" width="64">
-        <anim across="4" down="1" durations="50,50,50,50" height="64" id="0" loop="true" name="Animation 0" numframes="4" originx="32" originy="32" sync="false" version="1" width="256">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="49" id="8" name="Alien Cruiser" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="49" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="24" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,49,0,49" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="17" fixedrot="true" fric="0.2" gid="4" id="5" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
@@ -50,29 +72,7 @@
             </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="4" id="37" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Grabber Copy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="false">
-        <snippets>
-            <s enabled="true" id="0">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="2" list="0" val="1.2"/>
-                <prop id="3" list="0" val="false"/>
-            </s>
-            <s enabled="true" id="1">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="2">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="6"/>
-                <prop id="2" list="0" val="4"/>
-                <prop id="3" list="0" val="11"/>
-                <prop id="5" list="0" val="3"/>
-                <prop id="6" list="0" val="13"/>
-                <prop id="7" list="0" val="3"/>
-                <prop id="8" list="0" val="15"/>
-            </s>
-        </snippets>
-    </actor>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="26" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Saucer" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -95,14 +95,14 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="4" name="Alien Saucer" shared="false" width="64">
-        <anim across="8" down="1" durations="100,100,100,100,100,100,100,100" height="64" id="0" loop="true" name="Animation 0" numframes="8" originx="32" originy="32" sync="false" version="1" width="512">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="41" id="4" name="Alien Saucer" shared="false" width="64">
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="82" id="0" loop="true" name="Animation 0" numframes="6" originx="32" originy="20" sync="false" version="2" width="192">
+            <poly data="4,0,0,64,0,64,41,0,41" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="6" name="Alien Triangle" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
-            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="52" id="6" name="Alien Triangle" shared="false" width="64">
+        <anim across="1" down="1" durations="100" height="52" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="26" sync="false" version="2" width="64">
+            <poly data="4,0,0,64,0,64,52,0,52" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="38" name="Alien Triangle" shared="false" width="64">
@@ -127,25 +127,25 @@
     <custom-block blocktag="custom-33" blocktype="NORMAL" code="cast(.say(&quot;Label&quot;, &quot;_customBlock_MouseOverText&quot;), Bool)" desc="" global="false" gui="is mouse over text for %0" id="33" message="MouseOverText" name="MouseOverText" oid="-1" return="boolean" shared="false" snippetID="14">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="25" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
         <snippets>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="5" id="12" name="Particle" shared="false" width="6">
-        <anim across="1" down="1" durations="100" height="5" id="0" loop="true" name="Animation 0" numframes="1" originx="3" originy="2" sync="false" version="1" width="6"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="7" id="12" name="Particle" shared="false" width="5">
+        <anim across="1" down="1" durations="100" height="7" id="0" loop="true" name="Animation 0" numframes="1" originx="2" originy="3" sync="false" version="2" width="5"/>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="3" id="13" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle Bigger" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="24" fixedrot="true" fric="0.2" gid="3" id="13" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle Bigger" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
         <snippets>
             <s enabled="true" id="8">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="10" id="14" name="Particle Bigger" shared="false" width="13">
-        <anim across="1" down="1" durations="100" height="10" id="0" loop="true" name="Animation 0" numframes="1" originx="6" originy="5" sync="false" version="1" width="13"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="12" id="14" name="Particle Bigger" shared="false" width="13">
+        <anim across="1" down="1" durations="100" height="12" id="0" loop="true" name="Animation 0" numframes="1" originx="6" originy="6" sync="false" version="2" width="13"/>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="5" id="9" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Projectile" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="10" static="false">
         <snippets>
@@ -156,7 +156,7 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="10" name="Player Projectile" shared="false" width="16">
         <anim across="1" down="1" durations="100" height="16" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="8" sync="false" version="2" width="16">
-            <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="15" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
@@ -165,6 +165,8 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="fire"/>
                 <prop id="2" list="0" val="space"/>
+                <prop id="3" list="0" val="Fire"/>
+                <prop id="4" list="0" val="Animation 0"/>
             </s>
             <s enabled="true" id="7">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -185,6 +187,8 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="18" list="0" val="false"/>
                 <prop id="19" list="0" val="false"/>
+                <prop id="20" list="0" val="Fire"/>
+                <prop id="21" list="0" val="Animation 0"/>
                 <prop id="7" list="0" val="left"/>
                 <prop id="8" list="0" val="right"/>
                 <prop id="9" list="0" val="3"/>
@@ -196,9 +200,12 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="2" name="Player Tank" shared="false" width="64">
-        <anim across="2" down="2" durations="200,300,150" height="128" id="0" loop="true" name="Animation 0" numframes="3" originx="32" originy="32" sync="false" version="2" width="128">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="88" id="2" name="Player Tank" shared="false" width="64">
+        <anim across="2" down="1" durations="500,50" height="88" id="0" loop="true" name="Animation 0" numframes="2" originx="32" originy="44" sync="false" version="2" width="128">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="50,50,50,100,50,50" height="176" id="1" loop="false" name="Fire" numframes="6" originx="32" originy="44" sync="false" version="2" width="192">
+            <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Fire" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-21" blocktype="ACTION" code=".say(&quot;Label&quot;, &quot;_customBlock_SetLabelAlignmentBottom&quot;);" desc="" global="false" gui="bottom-align label for %0" id="21" message="SetLabelAlignmentBottom" name="SetLabelAlignmentBottom" oid="-1" return="void" shared="false" snippetID="14">
